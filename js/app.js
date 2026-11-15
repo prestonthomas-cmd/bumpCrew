@@ -45,7 +45,7 @@
   function prettyDate(iso) {
     var n = C.toDayNumber(iso);
     if (n === null) return "";
-    return new Date(n * 86400000).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+    return new Date(n * 86400000).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
   }
 
   function themeOf(baby) { return D.THEMES[baby.theme] ? baby.theme : state.theme; }
@@ -87,7 +87,7 @@
       var size = D.sizeForWeek(themeOf(baby), st.week);
       head = '<div class="size-emoji" aria-hidden="true">' + (size ? size.emoji : "✨") + "</div>";
       var sizeLine = size
-        ? 'Size of a <strong>' + esc(size.name.toLowerCase()) + "</strong>"
+        ? "Size of " + (/^[aeiou]/i.test(size.name) ? "an" : "a") + " <strong>" + esc(size.name.toLowerCase()) + "</strong>"
         : "<strong>Just getting started</strong>";
       var stats = size && size.week >= 8
         ? esc(C.formatLength(size.lengthCm, state.units)) + " · " + esc(C.formatWeight(size.weightG, state.units))
