@@ -20,7 +20,7 @@ A baby tracker for **everyone else's** babies. Most pregnancy apps follow one ba
 
 ## Live site
 
-https://prestonthomas-cmd.github.io/bumpcrew/ (served by GitHub Pages from the root of `main`).
+https://prestonthomas-cmd.github.io/bumpCrew/ (served by GitHub Pages from the root of `main`).
 
 ## Running it
 
