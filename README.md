@@ -61,6 +61,8 @@ node --test test/*.test.js
 ## Branches
 
 - **`main`** is what's live. Every push to it redeploys the site.
-- **`dev`** is where changes go first. Once they're tested, merge `dev` into `main` to publish them.
+- **`dev`** is where changes go first. Once they're tested, open a pull request from `dev` into `main` and merge it to publish them.
+
+Claude Code sessions follow this automatically, via `CLAUDE.md` and the skill in `.claude/skills/dev-main-workflow/`.
 
 Sizes are friendly averages for fun, not medical guidance.
