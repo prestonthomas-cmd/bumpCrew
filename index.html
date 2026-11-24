@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bump Crew</title>
   <meta name="description" content="Track every baby in your circle: friends, family and coworkers.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>">
+  <!-- Home-screen / bookmark icons. Relative paths on purpose: the site is
+       served from /babyTracker/, so root-absolute "/icon.png" would point at
+       the github.io root instead. Sizes are the ones iOS asks for (180 iPhone,
+       167 iPad Pro, 152 iPad); -precomposed is for older iOS. Regenerate with
+       python3 scripts/make-icon.py -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="icons/icon-167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Bump Crew">
+  <meta name="theme-color" content="#E0607E">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>

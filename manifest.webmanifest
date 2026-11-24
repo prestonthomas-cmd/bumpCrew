@@ -1,0 +1,17 @@
+{
+  "name": "Bump Crew",
+  "short_name": "Bump Crew",
+  "description": "Track every baby in your circle: friends, family and coworkers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#FBF7F2",
+  "theme_color": "#E0607E",
+  "icons": [
+    { "src": "icons/icon-152.png", "sizes": "152x152", "type": "image/png" },
+    { "src": "icons/icon-167.png", "sizes": "167x167", "type": "image/png" },
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

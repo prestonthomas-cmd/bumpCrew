@@ -30,6 +30,14 @@ No build step. Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
+## Home-screen icon
+
+In Safari, tap **Share → Add to Home Screen** to get the bottle icon. The icons in `icons/` are drawn by `python3 scripts/make-icon.py` (needs Pillow) from the numbers in that script, so the logo can be retuned without an image editor.
+
+The home-screen icon opens the app in Safari on purpose (`"display": "browser"`). A full-screen home-screen web app gets its own separate storage on iOS, so the babies you'd already saved in Safari wouldn't show up in it.
+
+If iOS draws the icon as a dark tile, the home screen's icon style is set to Dark or Automatic. Long-press the home screen → **Edit → Customize → Light** to fix it.
+
 ## Tests
 
 ```sh
