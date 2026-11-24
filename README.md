@@ -46,11 +46,21 @@ node --test test/*.test.js
 
 ## Layout
 
-| File | Purpose |
+| Path | Purpose |
 | --- | --- |
+| `index.html` | The page, including the home-screen icon tags |
 | `js/data.js` | Size themes and average length/weight per week (4–40) |
 | `js/calc.js` | Date math and unit formatting (no DOM, unit-tested) |
 | `js/app.js` | UI: rendering, forms, storage |
 | `css/styles.css` | Styles |
+| `icons/`, `manifest.webmanifest` | Home-screen and browser icons |
+| `scripts/make-icon.py` | Draws the icons in `icons/` |
+| `test/` | Unit tests for `js/calc.js` and `js/data.js` |
+| `.nojekyll` | Tells GitHub Pages to serve the files as-is |
+
+## Branches
+
+- **`main`** is what's live. Every push to it redeploys the site.
+- **`dev`** is where changes go first. Once they're tested, merge `dev` into `main` to publish them.
 
 Sizes are friendly averages for fun, not medical guidance.
